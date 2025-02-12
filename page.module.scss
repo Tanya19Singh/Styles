@@ -1,0 +1,85 @@
+.container{
+    z-index: 100;
+    margin-top: 10vh;
+    min-height: 150vh;
+    .body{
+        
+        margin-left: 10vw;
+        // padding-bottom: 1.5rem;
+        align-items: center;
+        
+        h1{
+            font-family: "Bodoni Moda SC", serif; /* Or your preferred Bodoni font stack */
+            font-size: 5rem; /* 48px */
+            margin: 0px;
+            font-weight: 400;
+            margin-top: 3rem;
+            line-height: 5vw;
+            text-transform: uppercase;
+        }
+        p{
+            color: white;
+            margin: 0px;
+            margin-top: 10px;
+            font-size: 3vw;
+            text-transform: uppercase;
+            span{
+                position: relative;
+            }
+        }
+    }
+    .images{
+        display: flex;
+        height:100%;
+        width: 100%;
+        justify-content: center;
+        position: relative;
+        margin-top: 5vh;
+        .imageContainer{
+            position: absolute;
+            img{
+                object-fit: cover;
+            }
+            &:nth-of-type(1){
+                height: 80vh;
+                width: auto;
+                z-index: 1;
+            }
+            &:nth-of-type(2){
+                left: 59vw;
+                top: 18vh;
+                height: 42vh;
+                width: auto;
+                z-index: 2;
+            }
+            &:nth-of-type(3){
+                left: 67vw;
+                top: 44vh;
+                height: 60vh;
+                width: auto;
+                z-index: 3;
+            }
+            &:nth-of-type(4){
+                left: 32vw;
+                top: 5vh;
+                height: 40vh;
+                width: auto;
+                z-index: 6;
+            }
+            &:nth-of-type(5){
+                left: 16.85vw;
+                top: 45vh;
+                height: 50vh;
+                width: auto;
+                z-index: 4;
+            }
+            &:nth-of-type(6){
+                left:59vw;
+                top: 43vh;
+                height: 40vh;
+                width: auto;
+                z-index: 7;
+            }
+        }
+    }
+}
